@@ -1,16 +1,18 @@
 import React from 'react';
 import { DateRangePicker } from 'rsuite';
 
-function CustomDateRangePicker() {
+import './DateRangePicker.css';
+
+function CustomDateRangePicker({ handleDatePickerChange }) {
   const [value, setValue] = React.useState([]);
 
   return (
-    <div className="field">
+    <div className="date-picker-root">
       <DateRangePicker
         value={value}
         onChange={value => {
           setValue(value);
-          console.log(value);
+          handleDatePickerChange(value);
         }}
       />
     </div>

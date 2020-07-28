@@ -2,10 +2,9 @@ import React from 'react';
 import {
   Container,
   Content,
-  Footer,
 } from 'rsuite';
 
-import LineChart from './components/LineChart';
+import BarChart from './components/BarChart';
 import Header from './components/Header';
 
 import './App.css';
@@ -15,9 +14,8 @@ function App() {
     <Container>
       <Header />
       <Content>
-        <LineChart />
+        <BarChart />
       </Content>
-      <Footer>Footer</Footer>
     </Container>
   );
 }
